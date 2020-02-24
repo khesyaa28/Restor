@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+<body style="background-color: maroon;">
+  <center><h1> <font color ="white" style="font-family: 'Courier New', Courier, monospace;">WELCOME </h1>
+    <center><h1> <font color ="lightgrey
+      " style="font-family: 'Courier New', Courier, monospace;">-BASKIN ROBBINS-</h1>
+
+
+
+    <center><h1> <font color ="white" style="font-family: 'Courier New', Courier, monospace;">FORM LOG IN </h1>
+    </center>
+<?php 
+if(isset($_GET['pesan'])){
+if($_GET['pesan']=="gagal"){
+    echo"Login gagal! Username dan password anda salah!";
+    }elseif($_GET['pesan']=="logout"){
+        echo"Anda telah berhasil logout";
+    }
+    }
+    ?>
+    <br>
+    <br>
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="outle.jpg" align="left"><br>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+ 
+    <form action="whe.php" method="POST">
+
+    <div class="login-box">
+  <h1>Login</h1>
+  <div class="textbox">
+    <i class="fas fa-user"></i>
+    <input type="text" name="username" placeholder="Username">
+  </div>
+ <br>
+ <br>
+  <div class="textbox">
+    <i class="fas fa-lock"></i>
+    <input type="password" name="password" placeholder="Password">
+  </div>
+ 
+  <br>
+  <figcaption><a href="signup.html"><font color="white" style="font-family:Courier New";>Sign Up!</a></figcaption></font>
+
+  <input type="submit" class="btn" value="Log in">
+  <br>
+  
+</div>
+       
+    </form>
+    </div>
+    </font>
+    </center>
+    </body>
+</html>
